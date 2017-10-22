@@ -5,8 +5,8 @@ class Post < ActiveRecord::Base
   POSTS = []
 
   def initialize(params)
-    @name = params(:name)
-    @content = params(:content)
+    @name = params[:name]
+    @content = params[:content]
     POSTS << self
   end
 
