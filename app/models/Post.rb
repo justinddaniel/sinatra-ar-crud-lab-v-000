@@ -9,6 +9,7 @@ class Post < ActiveRecord::Base
     @name = params[:name]
     @content = params[:content]
     POSTS << self
+    binding.pry
   end
 
   def self.all
