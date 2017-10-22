@@ -16,7 +16,7 @@ class Post < ActiveRecord::Base
   end
 
   def create(params)
-    binding.pry 
+    binding.pry
   end
 
 end
