@@ -3,6 +3,6 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |p|
       p.string :name
       p.string :content
+    end
   end
-end
 end
