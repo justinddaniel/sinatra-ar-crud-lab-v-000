@@ -15,6 +15,4 @@ class Post < ActiveRecord::Base
     POSTS
   end
 
-binding.pry
-
 end
