@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html>
- <head>
-  <meta charset="UTF-8">
-  <title>Create New Blog Post </title>
- </head>
- <body>
-   <h1> New Blog Post </h1>
-   <form method="POST" action="/posts">
-    <p>Name: <input type="text" name="name"></p>
-    <p>Content: <input id ="blogpost" type="text" name="content"></p>
-    <input type="submit" value="submit">
+<form method="post" action="/posts/<%=@post.id%>">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  Name<input type="text" value="<%=@post.name%>" name="name">
+  Contents<input type="text" value="<%=@post.content%>" name="content">
+  <input type="submit" value="submit">
 </form>
-
- </body>
-</html>
